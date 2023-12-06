@@ -1,18 +1,25 @@
 <div>
 
-    <form>
+    <form wire:submit.prevent='store'>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input wire:model.live='name' type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <label for="name" class="form-label">Inserisci il nome</label>
+          <input wire:model.live='name' type="text" class="form-control" id="name">
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="surname" class="form-label">Inserisci il cognome</label>
+          <input wire:model.live='surname' type="text" class="form-control" id="surname">
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <div class="mb-3">
+          <label for="age" class="form-label">Inserisci l'età</label>
+          <input wire:model.live='age' type="text" class="form-control" id="age">
+        </div>
+        <div class="mb-3">
+          <label for="country" class="form-label">Inserisci la tua nazione</label>
+          <input wire:model.live='country' type="text" class="form-control" id="country">
+        </div>
+        <div class="mb-3">
+          <label for="sex" class="form-label">Inserisci il nome</label>
+          <input wire:model.live='sex' type="text" class="form-control" id="sex">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>

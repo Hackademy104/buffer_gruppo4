@@ -1,7 +1,5 @@
 <x-layout>
 
-    <x-layout>
-
         <div class="conteiner">
             <div class="row justify-content-center">
                 <div class="col-12">
@@ -24,11 +22,4 @@
             </div>
         </div>
         
-        
-        </x-layout>
-
-
-
-
-
 </x-layout>

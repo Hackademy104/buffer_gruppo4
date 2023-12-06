@@ -15,3 +15,5 @@ use App\Http\Controllers\PublicController;
 */
 
 Route::get('/', [PublicController::class, 'welcome'])->name('welcome');
+
+Route::get('/create-profile' , [PublicController::class, 'create_profile'])->name('create-profile');

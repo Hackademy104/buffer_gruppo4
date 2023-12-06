@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\Profile;
 use Livewire\Component;
 
 class CreateProfile extends Component
@@ -29,6 +30,19 @@ class CreateProfile extends Component
         'country.required' => 'Il Paese deve essere obbligatorio',
         'sex.required' => 'Il sesso deve essere obbligatorio',
     ];
+
+    public function store(){
+        $profile = Profile::create([
+            'name'=>$this->name,
+            'surname'=>$this->surname,
+            'age'=>$this->age,
+            'country'=>$this->country,
+            'sex'=>$this->sex,
+        ]);
+
+        // $this->reset();
+        $this->validate();
+    }
 
 
     public function render()
